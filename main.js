@@ -1,6 +1,6 @@
 //////js solution onCLick
+    // var x = document.getElementsByClassName("hamburger-menu")[0];
     // function myFunctionShow() {
-    //   var x = document.getElementsByClassName("hamburger-menu")[0];
     //         x.style.display = "block";
     // }
     // function myFunctionHide() {
@@ -8,13 +8,13 @@
     // }
 
 ////js solution more slow
-    // document.getElementsByClassName("fas fa-bars")[0].addEventListener("click",
+    // document.getElementsByClassName("fa-bars")[0].addEventListener("click",
     //     function() {
     //     document.getElementsByClassName("hamburger-menu")[0].style.display = "block";
     //     }
     // );
 
-    // document.getElementsByClassName("fas fa-times")[0].addEventListener("click",
+    // document.getElementsByClassName("close")[0].addEventListener("click",
     //     function() {
     //     document.getElementsByClassName("hamburger-menu")[0].style.display = "none";
     //     }
@@ -22,29 +22,29 @@
 
 
 ////////jquery solution addClass
-    // $("i.fas.fa-bars").click(
-    //     function() {
-    //         $(".hamburger-menu").addClass("show");
-    //     }
-    // )
+    $(".fa-bars").click(
+        function() {
+            $(".hamburger-menu").addClass("active");
+        }
+    )
 
-    // $("i.fas.fa-times").click(
-    //     function() {
-    //         $(".hamburger-menu").removeClass("show");
-    //     }
-    // )
+    $(".close").click(
+        function() {
+            $(".hamburger-menu").removeClass("active");
+        }
+    )
 
 
 
 //////jquery solution show/hide
-    $("i.fas.fa-bars").click(
-        function() {
-            $(".hamburger-menu").show();
-        }
-    )
+    // $(".fa-bars").click(
+    //     function() {
+    //         $(".hamburger-menu").show();
+    //     }
+    // )
 
-    $("i.fas.fa-times").click(
-        function() {
-            $(".hamburger-menu").hide();
-        }
-    )
+    // $(".close").click(
+    //     function() {
+    //         $(".hamburger-menu").hide();
+    //     }
+    // )
