@@ -22,13 +22,13 @@
 
 
 ////////jquery solution addClass
-    $(".fa-bars").click(
+    $(".header-right > a").click(
         function() {
             $(".hamburger-menu").addClass("active");
         }
     )
 
-    $(".close").click(
+    $(".hamburger-menu > a").click(
         function() {
             $(".hamburger-menu").removeClass("active");
         }
@@ -37,13 +37,13 @@
 
 
 //////jquery solution show/hide
-    // $(".fa-bars").click(
+    // $(".header-right > a").click(
     //     function() {
     //         $(".hamburger-menu").show();
     //     }
     // )
 
-    // $(".close").click(
+    // $(".hamburger-menu > a").click(
     //     function() {
     //         $(".hamburger-menu").hide();
     //     }
